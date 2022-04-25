@@ -1,6 +1,8 @@
 import './style.css';
 import P5 from "p5";
 
+let socket = new WebSocket("ws://localhost:8080/game");
+
 const sketch = (p5: P5) => {
 
   p5.setup = () => {
